@@ -45,3 +45,46 @@ button {
 button:hover {
     background-color: #0056b3;
 }
+body {
+    font-family: Arial, sans-serif;
+}
+.container {
+    width: 100%;
+    max-width: 400px;
+    margin: 0 auto;
+    padding-top: 100px;
+}
+form {
+    display: flex;
+    flex-direction: column;
+}
+input {
+    margin-bottom: 15px;
+    padding: 10px;
+    font-size: 16px;
+}
+button {
+    padding: 10px;
+    font-size: 16px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+.login-link {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+.login-link a {
+    font-size: 16px;
+    color: #4CAF50;
+    text-decoration: none;
+    border: 2px solid #4CAF50;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+.login-link a:hover {
+    background-color: #4CAF50;
+    color: white;
+}
