@@ -12,17 +12,17 @@ const expenses = sequelize.define('Expense', {
     email: {
         type: DataTypes.STRING,
         allowNull: false,
-        unique: true,  // Ensure email is unique
+        unique: true,   
         validate: {
-            isEmail: true,  // Validate if it's a proper email format
+            isEmail: true,
         }
     },
     password: {
-        type: DataTypes.STRING,  // Store password as a string (hashed)
+        type: DataTypes.STRING,  
         allowNull: false,
-        unique: true,  // Ensure password is unique (hashed)
+        unique: true,  
         validate: {
-            len: [8, 100],  // Optional: enforce minimum length (e.g., 8 characters)
+            len: [8, 100],
         }
     },
 });
