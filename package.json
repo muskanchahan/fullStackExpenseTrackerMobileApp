@@ -4,5 +4,23 @@
     "express": "^4.21.0",
     "mysql2": "^3.11.2",
     "parser": "^0.1.4"
-  }
+  },
+  "name": "fullstackexpensetrackermobileapp",
+  "version": "1.0.0",
+  "description": "this is a full stack expense tracker mobile app",
+  "main": "app.js",
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/muskanchahan/fullStackExpenseTrackerMobileApp.git"
+  },
+  "author": "Muskan chauhan",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/muskanchahan/fullStackExpenseTrackerMobileApp/issues"
+  },
+  "homepage": "https://github.com/muskanchahan/fullStackExpenseTrackerMobileApp#readme"
 }
