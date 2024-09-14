@@ -3,13 +3,13 @@
     "body": "^5.1.0",
     "express": "^4.21.0",
     "mysql2": "^3.11.2",
-    "parser": "^0.1.4"
+    "parser": "^0.1.4",
+    "sequelize": "^6.37.3"
   },
   "name": "fullstackexpensetrackermobileapp",
   "version": "1.0.0",
   "description": "this is a full stack expense tracker mobile app",
   "main": "app.js",
-  "devDependencies": {},
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
