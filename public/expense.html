@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ExpenseTracker</title>
+    <link rel="stylesheet" href="expense.css">
+</head>
+<body>
+    <h1>Expense Tracker</h1>
+    <button id="leaderbtn">Leaderboard</button>
+    <section>
+      <h2>Add a New Expense</h2>
+      <form id="expense-form" method="POST" action="/ExpenseTracker">
+        <div>
+          <label for="type">Type:</label>
+          <select id="type">
+            <option value="">Choose one...</option>
+            <option value="food">Food</option>
+            <option value="bills">Bills</option>
+            <option value="entertainment">Entertainment</option>
+            </select>
+        </div>
+        <div>
+          <label for="name">Name:</label>
+          <input type="text" id="name" placeholder="Enter expense name">
+        </div>
+        <div>
+          <label for="date">Date:</label>
+          <input type="date" id="date">
+        </div>
+        <div>
+          <label for="amount">Amount:</label>
+          <input type="number" id="amount" placeholder="Enter expense amount">
+        </div>
+        <button type="submit">Add Expense</button>
+      </form>
+    </section>
+  
+    <section id="expenses">
+      <h2>Expenses Details</h2>
+      <ul id="ul"></ul>
+      </section>
+  
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.6.1/axios.min.js"></script>
+      <script src="expense.js"></script>
+</body>
+</html> 

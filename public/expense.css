@@ -1,0 +1,112 @@
+body {
+  font-family: sans-serif;
+  margin: 0;
+  padding: 20px;
+}
+
+h1, h2 {
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+#leaderbtn{
+  background-color: #4CAF50; /* Green */
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: 0.3s;
+  margin-left:200vh ;
+}
+
+/* Form section */
+#expense-form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 500px;
+  margin: 0 auto;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  background-color: #eee;
+}
+
+#expense-form label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+#expense-form select,
+#expense-form input[type="text"],
+#expense-form input[type="number"],
+#expense-form input[type="date"] {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+
+#expense-form button {
+  background-color: #4CAF50; /* Green */
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+#expense-form button:hover {
+  background-color: #45a049; /* Darker green */
+}
+
+/* Expenses section */
+#expenses {
+  margin-top: 30px;
+  border-top: 1px solid #ddd;
+  padding-top: 20px;
+}
+
+#expenses h2 {
+  margin-bottom: 10px;
+}
+
+/* Add styles for individual expense details (assuming a table layout) */
+#expenses table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+#expenses th,
+#expenses td {
+  padding: 10px;
+  border: 1px solid #ddd;
+  text-align: left;
+}
+
+#expenses th {
+  background-color: #f2f2f2;
+  font-weight: bold;
+}
+
+/* Responsiveness (optional) */
+@media (max-width: 765px) {
+  #expense-form {
+      width: 90%;
+  }
+
+  #expenses li {
+      flex-direction: column;
+      align-items: flex-start;
+  }
+
+  #expenses button {
+      margin-top: 5px; /* Space between buttons on small screens */
+      width: 100%; /* Buttons take full width on small screens */
+  }
+}
+
+

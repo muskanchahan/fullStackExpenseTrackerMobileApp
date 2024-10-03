@@ -1,10 +1,10 @@
 const { Sequelize, DataTypes } = require('sequelize');
-const sequelize = new Sequelize('user_db', 'root', 'muskan!!!@00$', {
+const sequelize = new Sequelize('expense_db', 'root', 'muskan!!!@00$', {
     host: 'localhost',
     dialect: 'mysql',
 });
 
-const expenses = sequelize.define('Expense', {
+const User = sequelize.define('User', {
     username: {
         type: DataTypes.STRING,
         allowNull: false,
@@ -12,33 +12,17 @@ const expenses = sequelize.define('Expense', {
     email: {
         type: DataTypes.STRING,
         allowNull: false,
-        unique: true,   
+        unique: true,
         validate: {
             isEmail: true,
-        }
+        },
     },
     password: {
-        type: DataTypes.STRING,  
+        type: DataTypes.STRING,
         allowNull: false,
-        unique: true,  
-        validate: {
-            len: [8, 100],
-        }
     },
 });
 
-sequelize.sync()
-.then(()=>{
-    console.log('database & table created');
-})
-.catch((error)=>{
-    console.log(error);
-})
-
-
-module.exports={
-    sequelize,
-    expenses,
-}
-
+ 
+module.exports = {User,sequelize,DataTypes};
 
